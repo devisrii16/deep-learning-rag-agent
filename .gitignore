@@ -1,0 +1,71 @@
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# UV / Virtual environments
+.venv/
+venv/
+.uv/
+
+# ChromaDB — local vector store data
+# Do NOT commit your corpus database.
+# Each team member should ingest locally.
+data/chroma_db/
+
+# Uploaded corpus files — commit .md files you author,
+# but do NOT commit large PDF files (use .gitignore or Git LFS)
+data/corpus/*.pdf
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter (if used for prototyping)
+.ipynb_checkpoints/
+*.ipynb
+
+# Streamlit
+.streamlit/secrets.toml
+# Environment variables and API keys
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Generated ChromaDB database
+data/chroma_db/
+data/chroma/
+
+# Temporary files
+*.log
+.DS_Store
